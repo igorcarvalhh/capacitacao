@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <style>
+            body {
+                background-color: orange;
+            }
+
+            #pai {
+                width: 700px;
+                height: 300px;
+                background-color: gray;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .filha {
+                height: 100%;
+                width: 50%;
+                background-color: rgb(167, 179, 179);
+                padding: 50px;
+            }
+
+            .primeira {
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .segunda {
+                background-color: rgb(255, 222, 160); 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+            }
+            .titulo {
+                text-align: center;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+            }
+
+            input {
+                padding: 8px;
+                border-radius: 12px;
+            }
+
+            button {
+                background-color: orange;
+                padding: 8px;
+                border-radius: 12px;
+                border: none;
+                color: #fff;
+            }
+
+            h2 {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            <div>
+                <h1>Título</h1>
+                <h2>Subtítulo</h2>
+                <p>olá mundo</p>
+            </div>
+            <a href="https://www.google.com/">página do google</a>
+            <input  type="">
+            <button>botão</button>
+            <img src="./assets/logo.png ">
+        -->
+
+        <div id="pai">
+
+            <div class="filha primeira">
+                <h2>Sing Up</h2>
+                <label>Email</label>
+                <input type="email">
+                <label>Senha</label>
+                <input type="password">
+                <a href="">Esqueci minha senha</a>
+                <button>Login</button>
+                <p>Não tem cadastro? <a href>Clique aqui</a></p>
+            </div>
+
+            <div class="filha segunda">
+                <a href="https://fluxoconsultoria.poli.ufrj.br/">
+                    <img class="logo" src="./assets/logo.png" >
+                </a>
+                <h1 class="titulo">Somos apixonados por projetos de engenharia</h1>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
